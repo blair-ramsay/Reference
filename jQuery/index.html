@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery Tutorial</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>jQuery Tutorial</h1>
+    </header>
+
+    <div class="container">
+
+      <div id="result"></div>
+      <ul id="users"></ul>
+
+      <form id="postForm" action="https://jsonplaceholder.typicode.com/posts">
+        <input type="text" id="title" placeholder="Title"><br>
+        <textarea placeholder="Body" id="body"></textarea><br>
+        <input type="submit" value="Submit">
+        <h3>Add Post</h3>
+      </form>
+
+    </div>
+
+    <script type="text/javascript">
+
+      $(document).ready(function(){
+
+        // Checking if test.html is loaded successfully
+
+        // $('#result').load('test.html', function(responseTxt, statusTxt, xhr){
+        //   if (statusTxt === 'success') {
+        //     alert('It went fine');
+        //   } else if(statusTxt === 'error'){
+        //     alert("Error: " + xhr.statusText);
+        //   }
+        // });
+
+        // Getting data from test.html
+
+        // $.get('test.html', function(data){
+        //   $('#result').html(data);
+        // });
+
+        // Getting JSON object from file
+
+        // $.getJSON('users.json', function(data){
+        //   $.each(data, function(i, user){
+        //     $('ul#users').append('<li> ' + user.firstName + '</li>');
+        //   });
+        // });
+
+        // Getting JSON object from onlije source
+
+        // $.ajax({
+        //   method: 'GET',
+        //   url: 'https://jsonplaceholder.typicode.com/posts',
+        //   dataType: 'json'
+        // }).done(function(data){
+        //   console.log(data);
+        //   $.map(data, function(post, i){
+        //     $('#result').append('<h3>' + post.title + '</h3><p> ' + post.body + '</p>');
+        //   });
+        // });
+
+        // Post
+
+        // $('#postForm').submit(function(e){
+        //   e.preventDefault();
+        //   var title = $('#title').val();
+        //   var body = $('#body').val();
+        //   var url = $(this).attr('action');
+        //
+        //   $.post(url, {title:title, body:body}).
+        //     done(function(data){
+        //     console.log('Post Saved');
+        //     console.log(data);
+        //   });
+        // });
+
+      });
+
+    </script>
+
+    <!-- <script src="jquery_selectors.js" charset="utf-8"></script> -->
+    <!-- <script src="jquery_events.js" charset="utf-8"></script> -->
+    <!-- <script src="jquery_dom.js" charset="utf-8"></script> -->
+    <!-- <script src="jquery_animate.js" charset="utf-8"></script> -->
+
+  </body>
+</html>

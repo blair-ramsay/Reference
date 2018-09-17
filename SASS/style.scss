@@ -1,0 +1,48 @@
+$ff: 'arial';
+$blue: rgb(10, 116, 176);
+$red: rgb(231, 20, 20);
+$green: rgb(8, 150, 61);
+$yellow: rgb(217, 196, 12);
+$purple: rgb(148, 11, 138);
+
+h1{
+  color: $blue;
+  font-family: $ff;
+}
+
+h2{
+  color: $red;
+  font-family: $ff;
+}
+
+#p1{
+  color: $green;
+  font-family: $ff;
+}
+
+#p2{
+  color: $yellow;
+  font-family: $ff;
+}
+
+#message{
+  color: $purple;
+  font-family: $ff;
+}
+
+#message2{
+  @extend #message;
+  font-size: 50px;
+}
+
+#box{
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  background-color: $red;
+}
+
+#box2{
+  @extend #box;
+  background-color: $blue;
+}
